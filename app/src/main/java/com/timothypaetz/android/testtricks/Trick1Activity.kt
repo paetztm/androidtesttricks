@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 
-open class MainActivity : AppCompatActivity() {
+open class Trick1Activity : AppCompatActivity() {
 
     private val incompleteUser = User(null)
     private val completedUser = User("Timothy Paetz")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_trick1)
         if (hasCompletedProfile(incompleteUser)) {
             toast("User has completed profile")
         } else {

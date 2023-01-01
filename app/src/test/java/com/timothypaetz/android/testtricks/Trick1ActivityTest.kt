@@ -5,16 +5,16 @@ import org.junit.Test
 import org.mockito.Mockito.*
 import org.mockito.kotlin.mock
 
-class MainActivityTest {
+class Trick1ActivityTest {
 
     @Test
     fun `verify no name user returns false for hasCompletedProfile`() {
         // given
-        val mainActivity: MainActivity = mock(defaultAnswer = CALLS_REAL_METHODS)
+        val trick1Activity: Trick1Activity = mock(defaultAnswer = CALLS_REAL_METHODS)
         val noNameUser = User(name = null)
 
         // when
-        val actual = mainActivity.hasCompletedProfile(noNameUser)
+        val actual = trick1Activity.hasCompletedProfile(noNameUser)
 
         // then
         assertFalse(actual)
@@ -23,11 +23,11 @@ class MainActivityTest {
     @Test
     fun `verify named user returns true for hasCompletedProfile`() {
         // given
-        val mainActivity: MainActivity = mock(defaultAnswer = CALLS_REAL_METHODS)
+        val trick1Activity: Trick1Activity = mock(defaultAnswer = CALLS_REAL_METHODS)
         val namedUser = User(name = "Timothy Paetz")
 
         // when
-        val actual = mainActivity.hasCompletedProfile(namedUser)
+        val actual = trick1Activity.hasCompletedProfile(namedUser)
 
         // then
         assertTrue(actual)
