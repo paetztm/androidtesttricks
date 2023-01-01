@@ -3,6 +3,7 @@ package com.timothypaetz.android.testtricks
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.annotation.VisibleForTesting
 
 open class Trick1Activity : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ open class Trick1Activity : AppCompatActivity() {
         }
     }
 
+    @VisibleForTesting
     fun hasCompletedProfile(user: User): Boolean {
         return user.name != null
     }
