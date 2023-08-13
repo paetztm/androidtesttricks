@@ -22,6 +22,10 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".Trick3Activity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidTestTricks</string>
+    <string name="incomplete_profile">Profile has not been completed</string>
 </resources>
